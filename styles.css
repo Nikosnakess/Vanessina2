@@ -1,0 +1,74 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Font normale per il testo */
+}
+
+.background {
+    /* Usa l'immagine come sfondo */
+    background-image: url('Vane.jpg');
+    /* Assicura che l'immagine copra l'intero schermo */
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end; /* Posiziona il contenitore a destra */
+    align-items: center;
+    padding-right: 20%; /* Sposta il contenitore più verso il centro */
+}
+
+.container {
+    text-align: center; /* Centra tutto il testo */
+    background-color: rgba(255, 255, 0, 0.8); /* Sfondo giallo trasparente per il testo */
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black; /* Traccia nera */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Aggiungi ombra al riquadro */
+    max-width: 600px; /* Limita la larghezza massima del contenitore */
+    margin: 0 auto; /* Centra il contenitore orizzontalmente */
+}
+
+.large-number {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aggiungi ombra al testo */
+}
+
+#countdown {
+    font-family: 'Impact', sans-serif; /* Font Impact per il countdown */
+    font-size: 3em; /* Aumenta la dimensione del font del countdown */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aggiungi ombra al testo */
+}
+
+p {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aggiungi ombra al testo */
+}
+
+/* Media queries per schermi piccoli */
+@media (max-width: 768px) {
+    .background {
+        justify-content: center; /* Centra il contenitore sui dispositivi mobili */
+        padding-right: 0; /* Rimuovi il padding a destra sui dispositivi mobili */
+    }
+
+    .container {
+        width: 90%; /* Imposta una larghezza del 90% per il contenitore sui dispositivi mobili */
+        padding: 10px; /* Riduci il padding sui dispositivi mobili */
+    }
+
+    .large-number {
+        font-size: 2em; /* Riduci la dimensione del font sui dispositivi mobili */
+    }
+
+    #countdown {
+        font-size: 2em; /* Riduci la dimensione del font del countdown sui dispositivi mobili */
+    }
+
+    p {
+        font-size: 1em; /* Riduci la dimensione del font sui dispositivi mobili */
+    }
+}
